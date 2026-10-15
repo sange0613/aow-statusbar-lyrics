@@ -10,8 +10,8 @@
     <key>CFBundleName</key><string>嗷嗷状态栏歌词</string>
     <key>CFBundleDisplayName</key><string>嗷嗷状态栏歌词</string>
     <key>CFBundlePackageType</key><string>APPL</string>
-    <key>CFBundleShortVersionString</key><string>1.0</string>
-    <key>CFBundleVersion</key><string>1</string>
+    <key>CFBundleShortVersionString</key><string>1.4.1</string>
+    <key>CFBundleVersion</key><string>141</string>
     <key>LSMinimumSystemVersion</key><string>13.0</string>
     <key>LSUIElement</key><true/>
     <key>NSAppleEventsUsageDescription</key><string>读取 Apple Music 当前播放歌曲和进度，用于匹配并同步显示歌词。</string>

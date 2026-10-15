@@ -1,6 +1,9 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
+FOUNDATION_EXPORT NSString *MLSearchTitle(NSString *title);
+FOUNDATION_EXPORT NSString *MLPrimaryArtist(NSString *artist);
+FOUNDATION_EXPORT NSDictionary * _Nullable MLUniqueTitleDurationRecord(NSArray *records, NSString *title, NSTimeInterval duration);
 
 typedef NS_ENUM(NSInteger, MLPlaybackState) {
     MLPlaybackStateStopped,
@@ -15,6 +18,7 @@ typedef NS_ENUM(NSInteger, MLPlaybackState) {
 @end
 
 FOUNDATION_EXPORT NSArray<MLLyricLine *> *MLParseLRC(NSString *source);
+FOUNDATION_EXPORT BOOL MLHasTimedLyrics(NSArray<MLLyricLine *> *lines);
 FOUNDATION_EXPORT MLLyricLine * _Nullable MLCurrentLine(NSArray<MLLyricLine *> *lines,
                                                         NSTimeInterval position);
 FOUNDATION_EXPORT NSDictionary * _Nullable MLBestLyricsRecord(NSArray *records,

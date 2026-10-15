@@ -1,0 +1,25 @@
+name: Verify macOS app
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test-and-build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Regression tests
+        run: ./test.sh
+      - name: Build minimal app
+        run: ./build.sh
+      - name: Validate bundle
+        run: |
+          codesign --verify --deep --strict 'build/嗷嗷状态栏歌词.app'
+          plutil -lint 'build/嗷嗷状态栏歌词.app/Contents/Info.plist'
