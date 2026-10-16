@@ -60,7 +60,7 @@
     url.queryItems = items;
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url.URL];
     request.timeoutInterval = 8;
-    [request setValue:@"AowStatusbarLyrics/1.4.1 (https://github.com/sange1022/aow-statusbar-lyrics)" forHTTPHeaderField:@"User-Agent"];
+    [request setValue:@"AowStatusbarLyrics/1.4.1 (https://github.com/sange0613/aow-statusbar-lyrics)" forHTTPHeaderField:@"User-Agent"];
     self.task = [self.session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         NSInteger status = [(NSHTTPURLResponse *)response statusCode];
         id json = data ? [NSJSONSerialization JSONObjectWithData:data options:0 error:nil] : nil;

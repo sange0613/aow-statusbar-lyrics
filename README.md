@@ -4,7 +4,7 @@
 
 一个极简的 macOS Apple Music 状态栏歌词工具。它会自动读取当前歌曲和播放进度，匹配同步歌词，并将当前歌词直接显示在 macOS 状态栏中。
 
-[下载精简版 ZIP](https://github.com/sange1022/aow-statusbar-lyrics/releases/latest/download/aow-statusbar-lyrics-1.4.1.zip) · [全部版本和 DMG 安装包](https://github.com/sange1022/aow-statusbar-lyrics/releases)
+[下载精简版 ZIP](https://github.com/sange0613/aow-statusbar-lyrics/releases/latest/download/aow-statusbar-lyrics-1.4.1.zip) · [全部版本和 DMG 安装包](https://github.com/sange0613/aow-statusbar-lyrics/releases)
 
 适用于 Apple Silicon Mac，macOS 13 或更新版本。ZIP 约 0.8 MB，无额外运行依赖。
 
@@ -97,7 +97,7 @@
 需要 macOS 13 或更高版本及 Apple Command Line Tools：
 
 ```sh
-git clone https://github.com/sange1022/aow-statusbar-lyrics.git
+git clone https://github.com/sange0613/aow-statusbar-lyrics.git
 cd aow-statusbar-lyrics
 ./build.sh
 ```
